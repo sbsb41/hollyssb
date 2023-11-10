@@ -1,0 +1,548 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+/*------------reset code----------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    min-width: 1200px;
+}
+
+#info1{
+    display: flex;
+}
+
+#info1 > div:first-child{
+    width: 99px;
+    height: 76px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/layout/gnb_smenu01.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+#info1 > div:last-child{
+    width: 69px;
+    height: 50px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/layout/gnb_smenu04.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#info2{
+    width: 66px;
+    height: 55px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/layout/logo_210302.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#info3 > ul{
+    display: flex;
+    gap: 24px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: system-ui;
+    font-weight: 700;
+    color: #616161;
+}
+
+nav {
+    min-width: 1200px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid #ba000c;
+}
+
+#info4 > ul{
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: ui-monospace;
+    justify-content: space-around;
+}
+
+#info4 > ul > a > li:hover{
+    background-color: #ba000c;
+    color: #de898e;
+}
+
+main > div{
+    display: flex;
+}
+
+#main1{
+    width: 100%;
+    height: 480px;
+    min-width: 1200px;
+    margin: 0 auto;
+    background-image: url("https://admin.hollys.co.kr/upload/main/banner/mainBanner_202310050334461620.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mainmain1{
+    width: 1100px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+#mainmain2{
+    width: 225px;
+    height: 263px;
+    background: #faf9f7;
+    margin: 20px;
+    padding: 0px 0px 0px 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#main2{
+    padding: 30px 20px;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+}
+
+#main2 > div:first-child{
+    width: 143px;
+    height: 20px;
+    padding: 0 0 0 19px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/main/menu_tit.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#main2 > div:last-child{
+    width: 225px;
+    height: 223px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/main/menu_img01.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ #mainmain3{
+    padding: 30px 20px;
+    width: 463px;
+    height: 263px;
+    padding: 40px 0px 0px 30px;
+    box-sizing: border-box;
+ }
+
+ #mainmain3 > div:first-child{
+    width: 146px;
+    height: 20px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/main/mall_tit.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ #mainmain3 > div:nth-child(2){
+    padding: 20px 0px 30px 0px;
+    box-sizing: border-box;
+    font-family: math;
+    font-size: 15px;
+    word-spacing: 3px;
+ }
+
+ #main3{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+    box-sizing: border-box;
+ }
+
+ #main3 > div > div:first-child{
+    padding: 3px 30px;
+ }
+
+ #main3 > div:not(:last-child) > div:first-child{
+    border-right: 1px solid #d7d7d7;
+    padding: 4px 16px 4px 16px;
+ }
+
+ #main3-1{
+    width: 100px;
+    height: 90px;
+    background-image: url("https://admin.hollys.co.kr/upload/mall/mallProdut_202311010321395920.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px;
+ }
+
+ #main3-2{
+    width: 100px;
+    height: 90px;
+    background-image: url("https://admin.hollys.co.kr/upload/mall/mallProdut_202311010321548990.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+ #main3-3{
+    width: 100px;
+    height: 90px; 
+    background-image: url("https://admin.hollys.co.kr/upload/mall/mallProdut_202310310748244010.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px;
+ }
+
+ #main3 > div > div:last-child{
+    font-size: 12px;
+    font-size: 12px;
+    font-family: fantasy;
+    text-align: center;
+    letter-spacing: 1px;
+ }
+
+ #mainmain4{
+    width: 225px;
+    height: 263px;
+    background: #faf9f7;
+    margin: 20px;
+    padding: 0px 0px 0px 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#main4{
+    padding: 30px 20px;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+}
+
+#main4 > div:first-child{
+    width: 143px;
+    height: 20px;
+    padding: 0 0 0 19px;
+    background-image: url("https://www.holl/main/store_tit.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#main4 > div:last-child{
+    width: 225px;
+    height: 223px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/main/store_main_pc.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ #mainmain5 {
+    width: 1100px;
+    height: 300px;
+    margin: 0 auto;
+    min-width: 1000px;
+ }
+
+ #mainmain5 > a > div{
+    width: 465px;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ #mainmain5 > a:first-child > div {
+    margin: 0px 20px;
+    box-sizing: border-box;
+    background-image: url("https://www.hollys.co.kr/websrc/images/main/img_banner_membership_210223.jpg");
+ }
+
+ #mainmain5 > a:last-child > div{
+    background-image: url("http://www.hollys.co.kr/websrc/images/main/img_2102223.jpg");
+ }
+
+.total6{
+    width: 1050px;
+    height: 200px;
+    margin: 0 auto;
+    min-width: 1050px;
+display: flex;
+gap: 56px;
+font-size: 12px;
+}
+
+ #mainmain6{
+    display: flex;
+    gap: 16px;
+ }
+
+ #main6{
+    width: 300px;
+ }
+
+ #main6 > div:first-child{
+    width: 63px;
+    height: 30px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/main/event_tit.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ #main6 > div:not(:first-child){
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+ }
+
+ .main6-1{
+    padding: 10px 0;
+ }
+
+ .main6-1 > div:last-child{
+    white-space: nowrap;
+ }
+
+ .main6-1 > div:first-child{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+ }
+
+ #main66{
+    width: 250px;
+    height: 100px;
+ }
+
+ #main66 > div:first-child{
+    width: 170px;
+    height: 20px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/main/b2b_tit.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ #main66 > div:nth-child(2){
+    padding: 20px 0;
+    word-spacing: 3px;
+    line-height: 15px;
+ }
+
+ #main66 > div > a> button{
+    width: 20px;
+    height: 20px;
+    background-image: url("https://img.freepik.com/premium-vector/arrow-icon_701361-329.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    line-height: 20px;
+    text-align: center;
+ }
+
+ #main7{
+    width: 200px;
+ }
+
+ #main7 > div:first-child{
+    width: 63px;
+    height: 30px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/main/event_tit.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ #main7 > div:not(:first-child){
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+ }
+
+ .main7-1{
+    padding: 10px 0;
+ }
+
+ .main7-1 > div:last-child{
+    white-space: nowrap;
+ }
+
+ .main7-1 > div:first-child{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+ }
+
+#main8{
+    display: flex;
+    gap: 16px;
+}
+
+ #main8 > div:first-child > div:first-child{
+    width: 30px;
+    height: 30px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/main/img_etc01.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-right: 1px solid #d7d7d7;
+    padding: 0px 20px;
+ }
+
+ #main8 > div:last-child > div:first-child{
+    width: 30px;
+    height: 30px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/main/img_etc03.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0px 10px;
+ }
+
+ #main8 > div > div:last-child{
+    margin-top: 20px;
+    text-align: center;
+    white-space: nowrap;
+ }
+
+ #main9{
+    width: 1100px;
+    height: 80px;
+    margin: 20px auto;
+    min-width: 1100px;
+    border-top: 3px solid #ba000c;
+    display: flex;
+    padding: 20px 10px;
+    gap: 8px;
+ }
+
+ #main9 > div:first-child{
+    width: 150px;
+    height: 25px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/main/sns_tit.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-sizing: border-box;
+ }
+
+ #main9 > div:nth-child(2){
+    width: 25px;
+    height: 40px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/main/sns_facebook.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+ }
+
+ #main9 > div:last-child{
+    width: 25px;
+    height: 40px;
+    background-image: url("https://www.hollys.co.kr/websrc/images/main/sns_instagram.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+ }
+
+footer{
+    background-color: #ba000c;
+}
+
+footer > div:first-child{
+    width: 1100px;
+    min-width: 1100px;
+    margin: 10px auto;
+    padding: 25px 0; 
+    box-sizing: border-box;
+}
+
+ footer > div > ul{
+    display: flex;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: -10px;
+    box-sizing: border-box;
+ }
+
+ footer > div > ul > li{
+    padding: 1px 5px;
+ }
+
+ footer > div > ul > li:not(:last-child){
+    border-right: 1px solid white;
+ }
+
+ footer > div:last-child{
+    width: 1100px;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 11px;
+    color: #de898e;
+    padding: 10px;
+    box-sizing: border-box;
+ }
